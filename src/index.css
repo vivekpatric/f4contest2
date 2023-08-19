@@ -1,13 +1,123 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@300&display=swap');
+
+body{
+    font-family: 'REM', sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1682685795463-0674c065f315?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1026&q=80);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+.signup-container{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid gray;
+    border-radius: 15px;
+    margin: 100px auto;
+    background-color: white;
+    opacity: 0.8;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 10px 10px #f0f0f0;
+}
+
+.card p{
+    font-size: 15px;
+    color: gray;
+}
+.card label{
+    font-size: 15px;
+}
+.card input{
+    height: 34px;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+.card button{
+    width: 250px;
+    height: 34px;
+    justify-content: center;
+    background-color: rgb(5, 69, 70);
+    color: white;
+    border-radius: 9px;
+    margin-top: 5px;
+    margin:5px auto;
+    cursor: pointer;
+
+}
+.card a{
+    text-decoration: none;
+    color: rgb(103, 103, 190);
+    font-size: 15px;
+    justify-content: center;
+    margin: 2px auto;
+}
+
+.footter{
+    margin-top: 15px;
+    font-size: 12px;
+}
+.footter span a {
+    text-decoration: none;
+}
+
+/* //profile page */
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 25px auto ;
+    
+}
+.profile-container .left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 15px;
+    width: 60%;
+    background-color: white;
+    opacity: 0.8;
+}
+.profile-container .right{
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 15px;
+    width: 30%;
+}
+.profile-container .right img{
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* // mobile device */
+@media (max-width: 600px){
+    body{
+        background-image: none;
+    }
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: auto;
+        margin: 5px auto;
+        justify-content: center;
+    }
+    .profile-container .right img{
+        width: 100px;
+        height: auto;
+        border-radius: 15px;
+        
+    }
 }
